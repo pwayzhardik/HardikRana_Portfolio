@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Hardik S. Rana</title>
+		<script>
+			//Add Google Analytics
+			
+		</script>
+		<meta charset="utf-8">
+		<meta name="description" content="Hardik Rana Portfolio">
+		<meta name="author" content="Hardik Rana">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		
+		<style>
+			body{
+				<!--background-image: url("background.jpg");-->
+				font-family: 'Lato', sans-serif;
+				background:white;
+			}
+			.main{		
+				margin-left: 5%;
+				margin-right: 5%;
+				margin-left: 5%;
+				margin-bottom: 5%;
+				background-color: rgba(225, 225, 225, 0.3);
+				box-shadow: 0px 0px 20px 0px #eeeeee;
+				border-radius: .5%;
+			}
+			.container
+			{
+				width: 100%;
+			}
+			.container h2{
+				text-align:center;
+				color:#FFFFFF;
+			}
+			.container p{
+				color:#E6E6E6;
+				font-size: 18px;
+				text-align: justify;
+				margin-top: -15px;
+			}
+			li
+			{
+			    text-align: left;
+			}
+			hr
+			{
+				border: 0;
+				border-top: 1px solid #1A3742;
+				width: 94%;
+			}
+			#profile
+			{
+				    margin-top: 4%;
+					background-color: #13836c;
+			}
+			#profile img{
+				float: left;
+				border-radius: 15%;
+			}
+			#skills
+			background-color: #13836c;
+			{
+				
+			}
+			#skills h2, #work h2
+			{
+				color: #464e54;
+			}
+			.skillImg
+			{
+				width: 175px;
+				background-image: url("background3.jpg");
+				height: 175px;
+				border-radius: 50%;
+				margin-left: 12%;
+			}
+			.skillImg h3
+			{
+			    padding-top: 40%;
+				text-align: center;
+				color: #FFFFFF;
+				font-size: 22px;
+			}
+			#education
+			{
+				text-align: center;
+				color: #FFFFFF;
+				background-color: #13836c;
+		
+			}
+			#education p
+			{
+				color: #FFFFFF;
+				font-size: 17px;
+			}
+			#education a
+			{
+				color: #ffcc99;
+			}
+			#education h4{
+				font-size:19px;
+				text-align: left;
+			}
+		
+			#work
+			{
+				background: white;
+				opacity: 0.7;
+			}
+			#contact
+			{
+				background-color: #13836c;
+			}
+			.navbar-default
+			{
+			    width: 90%;
+				margin-left: 5%;
+				background-color:#1BB999;
+				border:0px;
+			}
+			li a
+			{
+				color: #FFFFFF;
+				font-size: 18px;
+			}
+			
+			
+			
+			.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px !important;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .closebtn {
+    font-size: 40px !important;
+    top: 15px;
+    right: 35px;
+  }
+  span:hover
+  {
+	    color: #FFFFFF;
+  }
+		</style>
+		<script>
+			function openNav() {
+				document.getElementById("myNav").style.width = "100%";
+			}
+			function closeNav() {
+				document.getElementById("myNav").style.width = "0%";
+			}
+		</script>
+	</head>
+	<body>
+
+		<div id="myNav" class="overlay">
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+			<div class="overlay-content">
+				<a href="#profile" onclick="closeNav()">Profile</a>
+				<a href="#skills" onclick="closeNav()">Skills</a>
+				<a href="#education" onclick="closeNav()">Education</a>
+				<a href="#work" onclick="closeNav()">Work</a>
+				<a href="#contact" onclick="closeNav()">Contact</a>
+			</div>
+		</div>
+		<span style="font-size:30px;cursor:pointer" onclick="openNav()">☰ </span>
+
+	
+		<div class="main">
+		
+
+			 <div class="navbar navbar-default navbar-fixed-top">
+				<div class="container">
+					<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<div class= "collapse navbar-collapse navHeaderCollapse nav-justified">
+						<ul class="nav nav-pills nav-justified">
+							<li><a href="#">Home</a></li>
+							<li><a href="#profile">Profile</a></li>
+							<li><a href="#education">Education</a></li>
+							<li><a href="#skills">Skills</a></li>
+							<li><a href="#work">Work</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="container" id="profile">
+				<h2>Profile</h2>
+				<hr>
+				<div class="row">
+					<div class="col-sm-3 col-sm-offset-1">
+						<img src="hardik.jpg" class="img-rounded">
+					</div>
+					<div class="col-sm-7">
+						<br>
+						<p>
+						Hello! My name is Hardik Rana, and I am a senior undergrad student at <a href="http://www.njit.edu/"  target="_blank">
+						New Jersey Institution of Technology</a> pursuing a B.S. Engineering Technology degree in Computer Technology with a specialization in Web Development. I am a self motivated individual who thrives on learning new things and expanding 
+						my knowledge/skills. My skill set consist of various front-end development technologies, ranging from basic HTML to complex Angular.js.
+						
+						
+						</p>
+					</div>
+				</div>
+				<br>
+			</div>
+			
+			
+			<div class="container" id="skills">
+				<h2>Skills</h2>
+				<hr>
+				<div class="container">
+					<div class="col-sm-3">
+						<div class="skillImg">
+							<h3>HTML/HTML5</h3>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="skillImg">
+							<h3>CSS/CSS3</h3>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="skillImg">
+							<h3>JavaScript</h3>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="skillImg">
+							<h3>jQuery</h3>
+						</div>
+					</div>
+				</div>	
+				<br>
+				
+				<div class="container">
+					<div class="col-sm-3">
+						<div class="skillImg">
+							<h3>jQuery Mobile</h3>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="skillImg">
+							<h3>Bootstrap</h3>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="skillImg">
+							<h3>JSON</h3>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="skillImg">
+							<h3>Ajax</h3>
+						</div>
+					</div>					
+				</div>
+				<br>	
+				
+				
+				<div class="container">
+					<div class="col-sm-3">
+						<div class="skillImg">
+							<h3>DOM</h3>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="skillImg">
+							<h3>Angular.js</h3>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="skillImg">
+							<h3>Java</h3>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="skillImg">
+							<h3>SQL</h3>
+						</div>
+					</div>					
+				</div>
+				<br>	
+				
+				<div class="container">
+					<div class="col-sm-3">
+						<div class="skillImg">
+							<h3>Adobe Dreamweaver</h3>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="skillImg">
+							<h3>Adobe Photoshop</h3>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="skillImg">
+							<h3>Adobe Illustrator</h3>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="skillImg">
+							<h3>Adobe Flash Pro</h3>
+						</div>
+					</div>					
+				</div>
+				<br>					
+			</div>			
+			
+			
+			
+			
+			<div class="container" id="education">
+				<h2>Education</h2>
+				<hr>
+				<div class="col-sm-6">
+					<h4 class="edu"><a href="http://www.njit.edu/" target="_blank">New Jersey Institute of Technology, Newark NJ</a></h4>
+					<br><p><b>B.S. Engineering Technology - Computer Technology</b>
+					<br>Specialization: Web Development
+					<br>Anticipated graduation date: December 31, 2016
+					<br>GPA: 3.8/4.0
+					</p>
+				
+				</div>
+				<div class="col-sm-6">
+					<h4 class="edu"><a href="http://www.middlesexcc.edu/" target="_blank">Middlesex County College, Middlesex NJ</a></h4>
+					<br><p><b>Associate in Applied Science - Computer and Information Systems</b>
+					   <br>Graduated in May 2015
+					   <br>GPA: 3.3/4.0
+					</p>
+					<ul>
+						<li>Network Administration Certificate</li>
+						<li>Information Systems Security</li>
+						<li>Windows/PC Support Certificate</li>
+						<li>Java Programming Certificate</li>
+						<li>Java & Web Programming Certificate</li>
+					</ul>
+					
+				</div>
+			</div>
+						
+			
+			
+			<div class="container" id="work">
+				<h2>Work</h2>
+				<hr>
+				<div class="col-sm-4">
+					<p><a href="https://hardik-rana-bootstrap.herokuapp.com/" target="_blank">Responsive Fashion Ecommerce website implemented using Bootstrap.</a></p>
+					<br><p><a href="https://hardik-rana-restaurant.herokuapp.com/index.html" target="_blank">Resturant website that allows users to make reservations created with CSS3 and JavaScript for data validation.</a></p>
+					<br><p><a href="https://hardik-rana-school.herokuapp.com/index.html" target="_blank">A website for Piscataway Township schools implemented with HTML, CSS and jQuery.</a></p>
+				</div>
+				<div class="col-sm-4">			
+					<p><a href="https://hardik-rana-shopping.herokuapp.com/index.html" target="_blank">Static shopping webpage, slider using Javascript.</a></p>
+					<br><p><a href="https://web.njit.edu/~hsr6/Angular/getDataFromDatabase.html" target="_blank">Manipulating a database with simple Javascript, Angular.js, Bootstrap, PHP and SQL.</a></p>
+					<br><p><a href=""></a></p>
+				</div>
+				<div class="col-sm-4">
+					<p><a href="https://hardik-rana-mobile-adaptive.herokuapp.com/index.html" target="_blank">Webpage with mobile and desktop adaptive features, implemented usign media queries.</a></p>
+					<br>
+					<p><a href="https://hardik-rana-form-table.herokuapp.com/index.html" target="_blank">An example of a  webpage that allows users to buy tickets for events.</a></p>
+					<br><p><a href="https://hardik-rana-first-project.herokuapp.com/index.html" target="_blank">A webpage template with replaceable content.</a></p>
+				</div>		
+			</div>
+			
+			
+			
+			<div class="container"  id="contact">
+				<h2>Contact</h2>
+				<hr>
+				<div class="col-sm-4 col-sm-offset-4">
+					<p class="glyphicon glyphicon glyphicon-envelope" aria-hidden="true">
+					Email: hardik.srana@gmail.com
+					</p>
+					<p class="glyphicon glyphicon glyphicon-phone" aria-hidden="true">
+					Phone: 732-372-5091
+					</p>		
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
