@@ -36,7 +36,6 @@
 				margin-left: 5%;
 				margin-bottom: 5%;
 				background-color: rgba(225, 225, 225, 0.3);
-				box-shadow: 0px 0px 20px 0px #eeeeee;
 				border-radius: .5%;
 			}
 			.container
@@ -45,10 +44,10 @@
 			}
 			.container h2{
 				text-align:center;
-				color:#FFFFFF;
+				color:#000;
 			}
 			.container p{
-				color:#E6E6E6;
+				color:#353535;
 				font-size: 18px;
 				text-align: justify;
 				margin-top: -15px;
@@ -66,61 +65,57 @@
 	
 			#profile
 			{
-				    margin-top: 4%;
-					background-color: #08524b;
+				    padding-top: 4%;
+					background-color: #fff;
 			}
 			#profile img{
 				float: left;
 				border-radius: 15%;
-			}
-			#skills
-			background-color: #13836c;
-			{
-				
-			}
-			#skills h2, #work h2
-			{
-				color: #464e54;
-			}
+			}		
 			.skillImg
 			{
-				width: 175px;
+				width: 100px;
 				background-image: url("background3.jpg");
-				height: 175px;
-				border-radius: 50%;
+				height: 100px;
+				border-radius: 20%;
 				margin-left: 12%;
 			}
 			.skillImg h3
 			{
-			    padding-top: 40%;
+			    padding-top: 15%;
 				text-align: center;
 				color: #FFFFFF;
-				font-size: 22px;
+				font-size: 20px;
 			}
-			.progress-bar
-			{
-				background-color:#33c18b;
+			.skillCategory{
+			    border-top: 1px solid #D3D9DC;
+				width: 96%;
 			}
-			.progress
-			{
-				height:10px;
-				border: 1px solid #e2c612;
+			.skillCategoryTitle{
+				float: left;
+				display: block;
+				width: 100%;
+				margin-left: 40px;
+				font-size: 20px;
+				color: #636363;
+				margin: 20px 0px 5px 19px;
 			}
 			#education
 			{
 				text-align: center;
-				color: #FFFFFF;
-				background-color: #08524b;
+				color: #484848;
+				background-color: #fff;
 		
 			}
 			#education p
 			{
-				color: #FFFFFF;
+				color: #484848;
 				font-size: 17px;
 			}
 			#education a
 			{
-				color: #ffcc99;
+				font-weight:bold;
+				color: #000;
 			}
 			#education h4{
 				font-size:19px;
@@ -129,80 +124,27 @@
 		
 			#work
 			{
-				background: white;
+				background: #f7f7f7;
 				opacity: 0.7;
 			}
 			#contact
 			{
-				background-color: #08524b;
+				background-color: #fff;
+				
 			}
+			
+			
 			.navbar-default
 			{
-			    width: 90%;
-				margin-left: 5%;
-				background-color:#1BB999;
-				border:0px;
+				background-color:#F8F8F8;
+				border:1px solid #DCDCDC;
 			}
 			li a
 			{
-				color: #FFFFFF;
+				color: #848484;
 				font-size: 18px;
 			}
 			
-			
-			
-			.overlay {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.9);
-    overflow-x: hidden;
-    transition: 0.5s;
-}
-
-.overlay-content {
-    position: relative;
-    top: 25%;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
-}
-
-.overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-
-.overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
-}
-
-.closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px !important;
-}
-
-@media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
-  .closebtn {
-    font-size: 40px !important;
-    top: 15px;
-    right: 35px;
-  }
-  span:hover
-  {
-	    color: #FFFFFF;
-  }
 		</style>
 		<script>
 			function openNav() {
@@ -261,7 +203,7 @@
 					<div class="col-sm-7">
 						<br>
 						<p>
-							Hello! My name is Hardik Rana, and I am a senior undergrad student at<a href="http://www.njit.edu/"> New Jersey Institution of Technology</a> pursuing a B.S. Engineering Technology degree in Computer Technology with a specialization in Web Development. I am a self motivated individual and I am passionate about learning new things and expanding my knowledge/skills. My skill set consist of various front-end development technologies, ranging from basic HTML to complex Angular.js. Please contact me at hardik.srana@gmail.com for my complete resume.	
+							Hello! My name is Hardik Rana, and I am a senior undergrad student at<a href="http://www.njit.edu/"> New Jersey Institution of Technology</a> pursuing a B.S. Engineering Technology degree in Computer Technology with a specialization in Web Development. Currently, I am working at <a href="http://www.rdaltanova.com/">R&D Altanova</a> as a Product Engineer. I am a self motivated individual and extremely passionate about learning new things and expanding my knowledge/skills. My skill set consist of various front-end development technologies, ranging from basic HTML to complex Angular.js. Along with web development, I have a deep understanding of engineering fundamentals. Please contact me at hardik.srana@gmail.com for my complete resume.	  
 						</p>
 					</div>
 				</div>
@@ -273,195 +215,319 @@
 				<h2>Skills</h2>
 				<hr>
 				<div class="container">
-					<div class="col-sm-3">
+				<h4 class="skillCategoryTitle">Software</h4><hr class="skillCategory">
+					<div class="col-md-2">
 						<div class="skillImg">
-							<h3>HTML/HTML5</h3>
-						</div>
-						
-						 <div class="progress">
-							<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:92%">
-							</div>
-						</div>
-						
+							<h3>Genesis Frontline 2000</h3>
+						</div>						
 					</div>
-					<div class="col-sm-3">
+					<div class="col-md-2">
+						<div class="skillImg">
+							<h3>Valor</h3>
+						</div>	
+					</div>
+					
+					<div class="col-md-2">
+						<div class="skillImg">
+							<h3>CAM / CAM360</h3>
+						</div>
+					</div>
+					
+					<div class="col-md-2">
+						<div class="skillImg">
+							<h3>FasTech</h3>
+						</div>
+					</div>
+					
+					<div class="col-md-2">
+						<div class="skillImg">
+							<h3>Paradigm</h3>
+						</div>
+					</div>
+					
+					<div class="col-md-2">
+						<div class="skillImg">
+							<h3>Bacon</h3>
+						</div>
+					</div>
+					<br>
+				<h4 class="skillCategoryTitle">Automation</h4><hr class="skillCategory">
+					
+					<div class="col-md-2">
+						<div class="skillImg">
+							<h3>Hitachi</h3>
+						</div>
+					</div>
+					
+					<div class="col-md-2">
+						<div class="skillImg">
+							<h3>Schmoll</h3>
+						</div>	
+					</div>
+					
+					<div class="col-md-2">
+						<div class="skillImg">
+							<h3>X-Ray</h3>
+						</div>
+					</div>
+					
+					<div class="col-md-2">
+						<div class="skillImg">
+							<h3>X-Ray Pluritech</h3>
+						</div>
+					</div>
+					
+					<div class="col-md-2">
+						<div class="skillImg">
+							<h3>Plasma</h3>
+						</div>
+					</div>
+					
+					<div class="col-md-2">
+						<div class="skillImg">
+							<h3>Etcher</h3>
+						</div>
+					</div>
+					
+					<div class="col-md-2">
+						<div class="skillImg">
+							<h3>Lamination</h3>
+						</div>
+					</div>
+					
+					<div class="col-md-2">
+						<div class="skillImg">
+							<h3>ATG <br>Testing System</h3>
+						</div>
+					</div>
+					
+					<div class="col-md-2">
+						<div class="skillImg">
+							<h3>ESI 5200</h3>
+						</div>
+					</div>
+					
+					<div class="col-md-2">
+						<div class="skillImg">
+							<h3>HT6060 MicroCraft<br>(TDR)</h3>
+						</div>	
+					</div>
+				<h4 class="skillCategoryTitle">Server</h4><hr class="skillCategory">
+					<div class="col-md-2">
+						<div class="skillImg">
+							<h3>DNC</h3>
+						</div>
+					</div>
+					
+					<div class="col-md-2">
+						<div class="skillImg">
+							<h3>ESI 5200</h3>
+						</div>
+					</div>
+					<h4 class="skillCategoryTitle">Programming</h4><hr class="skillCategory">
+					<div class="col-md-2">
+						<div class="skillImg">
+							<h3>HTML<br>HTML5</h3>
+						</div>	
+					</div>
+					
+					<div class="col-md-2">
 						<div class="skillImg">
 							<h3>CSS/CSS3</h3>
-						</div>
-						
-						<div class="progress">
-							<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:92%">
-							</div>
-						</div>
-						
+						</div>						
 					</div>
-					<div class="col-sm-3">
+					
+					<div class="col-md-2">
 						<div class="skillImg">
 							<h3>JavaScript</h3>
-						</div>
-						
-						<div class="progress">
-							<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:85%">
-							</div>
-						</div>
-						
+						</div>	
 					</div>
-					<div class="col-sm-3">
+					
+					<div class="col-md-2">
 						<div class="skillImg">
 							<h3>jQuery</h3>
-						</div>
-						
-						<div class="progress">
-							<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:82%">
-							</div>
-						</div>
-						
+						</div>	
 					</div>
-				</div>	
-				<br>
-				
-				<div class="container">
-					<div class="col-sm-3">
+		
+					<div class="col-md-2">
 						<div class="skillImg">
 							<h3>jQuery Mobile</h3>
 						</div>
-						
-						<div class="progress">
-							<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:80%">
-							</div>
-						</div>
-						
 					</div>
-					<div class="col-sm-3">
+					
+					<div class="col-md-2">
 						<div class="skillImg">
 							<h3>Bootstrap</h3>
 						</div>
 						
-						<div class="progress">
-							<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:90%">
-							</div>
-						</div>
-						
 					</div>
-					<div class="col-sm-3">
+					<div class="col-md-2">
 						<div class="skillImg">
 							<h3>JSON</h3>
 						</div>
-						
-						<div class="progress">
-							<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:95%">
-							</div>
-						</div>
-						
 					</div>
-					<div class="col-sm-3">
+					
+					<div class="col-md-2">
 						<div class="skillImg">
 							<h3>Ajax</h3>
 						</div>
-						
-						<div class="progress">
-							<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:95%">
-							</div>
-						</div>
-						
-					</div>					
-				</div>
-				<br>	
-				
-				
-				<div class="container">
-					<div class="col-sm-3">
+					</div>	
+					<div class="col-md-2">
 						<div class="skillImg">
 							<h3>DOM</h3>
 						</div>
-						
-						<div class="progress">
-							<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:95%">
-							</div>
-						</div>
-						
 					</div>
-					<div class="col-sm-3">
+					
+					<div class="col-md-2">
 						<div class="skillImg">
 							<h3>Angular.js</h3>
 						</div>
-						
-						<div class="progress">
-							<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:75%">
-							</div>
-						</div>
-						
 					</div>
-					<div class="col-sm-3">
+					
+					<div class="col-md-2">
 						<div class="skillImg">
 							<h3>Java</h3>
 						</div>
-						
-						<div class="progress">
-							<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
-							</div>
-						</div>
-						
 					</div>
-					<div class="col-sm-3">
+					
+					<div class="col-md-2">
 						<div class="skillImg">
 							<h3>SQL</h3>
 						</div>
-						
-						<div class="progress">
-							<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:80%">
-							</div>
+					</div>	
+				<h4 class="skillCategoryTitle">Database</h4><hr class="skillCategory">
+					<div class="col-md-2">
+						<div class="skillImg">
+							<h3>MySQL</h3>
 						</div>
-						
-					</div>					
-				</div>
-				<br>	
+					</div>	
+					<div class="col-md-2">
+						<div class="skillImg">
+							<h3>Oracle</h3>
+						</div>					
+					</div>
 				
-				<div class="container">
-					<div class="col-sm-3">
+					<div class="col-md-2">
 						<div class="skillImg">
-							<h3>Adobe Dreamweaver</h3>
+							<h3>phpMyAdmin</h3>
 						</div>
-						
-						<div class="progress">
-							<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:85%">
-							</div>
-						</div>
-						
 					</div>
-					<div class="col-sm-3">
+					<h4 class="skillCategoryTitle">System</h4><hr class="skillCategory">
+					<div class="col-md-2">
 						<div class="skillImg">
-							<h3>Adobe Photoshop</h3>
+							<h3>Windows</h3>
 						</div>
-						
-						<div class="progress">
-							<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
-							</div>
+					</div>	
+					<div class="col-md-2">
+						<div class="skillImg">
+							<h3>Unix</h3>
 						</div>
-						
+					</div>			
+					<div class="col-md-2">
+						<div class="skillImg">
+							<h3>Linux</h3>
+						</div>
 					</div>
-					<div class="col-sm-3">
+					<div class="col-md-2">
 						<div class="skillImg">
-							<h3>Adobe Illustrator</h3>
+							<h3>Mac</h3>
 						</div>
-						
-						<div class="progress">
-							<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:75%">
-							</div>
-						</div>
-						
 					</div>
-					<div class="col-sm-3">
+					<h4 class="skillCategoryTitle">Integrated Development Environment</h4><hr class="skillCategory">
+					<div class="col-md-2">
 						<div class="skillImg">
-							<h3>Adobe Flash Pro</h3>
+							<h3>NotePad++</h3>
 						</div>
-						
-						<div class="progress">
-							<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:75%">
-							</div>
+					</div>
+					<div class="col-md-2">
+						<div class="skillImg">
+							<h3>Microsoft<br> Visual<br> Studio</h3>
 						</div>
-						
-					</div>					
+					</div>	
+					<div class="col-md-2">
+						<div class="skillImg">
+							<h3>TextPad</h3>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="skillImg">
+							<h3>Eclipse</h3>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="skillImg">
+							<h3>Dreamweaver</h3>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="skillImg">
+							<h3>PhpStorm</h3>
+						</div>
+					</div>
+					<h4 class="skillCategoryTitle">Software Development Life Cycle</h4><hr class="skillCategory">
+					<div class="col-md-2">
+						<div class="skillImg">
+							<h3>Agile</h3>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="skillImg">
+							<h3>Waterfall</h3>
+						</div>
+					</div>
+					<h4 class="skillCategoryTitle">Content Management System</h4><hr class="skillCategory">
+					<div class="col-md-2">
+						<div class="skillImg">
+							<h3>Drupal</h3>
+						</div>
+					</div>
+					<h4 class="skillCategoryTitle">Adobe</h4><hr class="skillCategory">
+					<div class="col-md-2">
+						<div class="skillImg">
+							<h3>Illustrator</h3>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="skillImg">
+							<h3>Flash</h3>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="skillImg">
+							<h3>Photoshop</h3>
+						</div>
+					</div>
+					<h4 class="skillCategoryTitle">Microsoft</h4><hr class="skillCategory">
+					<div class="col-md-2">
+						<div class="skillImg">
+							<h3>Word</h3>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="skillImg">
+							<h3>Excel</h3>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="skillImg">
+							<h3>Access</h3>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="skillImg">
+							<h3>PowerPoint</h3>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="skillImg">
+							<h3>Publisher</h3>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="skillImg">
+							<h3>Outlook</h3>
+						</div>
+					</div>
 				</div>
 				<br>					
 			</div>			
@@ -476,7 +542,7 @@
 					<h4 class="edu"><a href="http://www.njit.edu/" target="_blank">New Jersey Institute of Technology, Newark NJ</a></h4>
 					<br><p><b>B.S. Engineering Technology - Computer Technology</b>
 					<br>Specialization: Web Development
-					<br>Anticipated graduation date: December 31, 2016
+					<br>Anticipated graduation date: May 16, 2017
 					<br>GPA: 3.8/4.0
 					</p>
 				
@@ -546,12 +612,8 @@
 			<div class="container"  id="contact">
 				<h2>Contact</h2>
 				<hr>
-				<div class="col-sm-4 col-sm-offset-2">
-					<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-					<div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="dark" data-vanity="hardik-rana-055421124"><a class="LI-simple-link" href='https://www.linkedin.com/in/hardik-rana-055421124?trk=profile-badge'>Hardik Rana</a></div>
-				</div>
 				<br>
-				<div class="col-sm-6 col-sm-offset-0">
+				<div class="col-md-6 col-md-offset-3">
 					<p class="glyphicon glyphicon glyphicon-envelope" aria-hidden="true">
 					Email: hardik.srana@gmail.com | hsr6@njit.edu
 					</p>
